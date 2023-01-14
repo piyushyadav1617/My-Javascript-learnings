@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background:linear-gradient(to top right, rgba(109, 156, 237, 0.8),
+    rgba(84, 246, 170, 0.8));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width:60%;
+    height:250px;
+    background:linear-gradient(to bottom right, rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.3));
+    border-radius: 30px;
+    box-shadow: 2px 5px 10px rgb(101, 101, 101);
+    backdrop-filter: blur(20px);
+}
+
+#timer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    font-size: 72px;
+    text-align: center;
+    /* margin: 0 auto; */
+    padding: 35px;
+
+}
+
+.buttons{
+    text-align: center;
+   
+
+
+}
+
+button{
+    margin: 0 10px;
+    border: none;
+}
+button i{
+    
+    font-size: 2rem;
+    padding: 10px;
+    color:#fff;
+    transition: .3s;
+
+}
+
+button i:hover{
+    cursor: pointer;
+    font-size: 2.3rem;
+}
+
+#play{
+
+    background:linear-gradient(to top right, rgba(42, 87, 11, 1),
+    rgba(155, 252, 210, 0.8));
+}
+
+
+#pause{
+    background:linear-gradient(to top right, rgba(134, 63, 8, 1),
+    rgba(255, 220, 190, 0.8));
+}
+
+#reset{
+    background:linear-gradient(to top right, rgba(158, 0, 0, 1),
+    rgba(255, 209, 209, 0.8));
+}

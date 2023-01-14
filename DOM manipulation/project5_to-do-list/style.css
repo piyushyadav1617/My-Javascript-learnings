@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    to top right,
+    rgba(44, 115, 186, 1),
+    rgba(171, 176, 77, 1)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-task-container {
+  width: 350px;
+  padding: 20px 10px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px rgb(56, 56, 56);
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 5;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+#add-task {
+  flex: 1;
+  transition: 0.2s;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  color: rgb(73, 157, 37);
+  border: 2px solid rgb(79, 144, 29);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+#add-task:hover {
+  background: linear-gradient(
+    to top right,
+    rgba(44, 115, 186, 0.8),
+    rgba(242, 255, 0, 0.5)
+  );
+  color: white;
+}
+
+/* styling for tasks */
+.task {
+  width: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 10px;
+  box-shadow: 1px 2px 6px rgb(56, 56, 56);
+  padding: 5px;
+  margin-bottom: 5px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.task li {
+  list-style: none;
+  flex: 4;
+  padding: 5px;
+  font-size: 1.3rem;
+  margin: 10px;
+}
+
+.task button {
+  flex: 1;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.task .checkTask {
+  color: orange;
+  margin-right: 5px;
+  border: solid 2px orange;
+  font-size: 1.5rem;
+}
+.task .deleteTask {
+  color: rgb(255, 0, 0);
+
+  border: solid 2px rgb(255, 0, 0);
+  font-size: 1.3rem;
+}
+
+.task .checkTask:hover {
+  background-color: orange;
+  color: rgb(255, 255, 255);
+}
+.task .deleteTask:hover {
+  color: rgb(255, 255, 255);
+  background-color: red;
+}
