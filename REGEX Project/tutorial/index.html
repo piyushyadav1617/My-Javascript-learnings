@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Welcome to Dragon Travels</title>
+  </head>
+  <body>
+    <div
+      id="success"
+      class="alert alert-success alert-dismissible fade show"
+      role="alert"
+    >
+      <strong>Success!</strong> Your travel form has been successfully submitted
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="container">
+      <h1>Travel desk</h1>
+      <form>
+        <div class="form-group">
+          <label for="username">Userame</label>
+          <input
+            type="username"
+            class="form-control"
+            id="username"
+            placeholder="Enter your username"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="example@..."
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="car">Select your car</label>
+          <select multiple class="form-control" id="car">
+            <option>Omni</option>
+            <option>Maruti 800</option>
+            <option>Ford Titanium</option>
+            <option>Audi A4</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="address">Enter your adress</label>
+          <textarea
+            class="form-control"
+            name="address"
+            id="address"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            placeholder="Phone number"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Any other message</label>
+          <textarea
+            class="form-control"
+            name="message"
+            id="message"
+            rows="3"
+          ></textarea>
+        </div>
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
