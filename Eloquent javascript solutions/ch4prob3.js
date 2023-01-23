@@ -59,7 +59,7 @@ function listToArray(list) {
   return arr;
 }
 
-//3) prpend function
+//3) prpend function to create one more linked list
 function prepend(element, list) {
   return { value: element, rest: list };
 }
