@@ -1,3 +1,4 @@
+//First Method
 function checkCashRegister(price, cash, cid) {
   const currencyValues = {
     PENNY: 0.01,
@@ -65,3 +66,53 @@ console.log(
     ["ONE HUNDRED", 100],
   ])
 );
+//________________________________________________________________________________________________
+//Another method
+function checkCashRegister(price, cash, cid) {
+const currencyValues = {
+   "ONE HUNDRED": 100*100,
+   "TWENTY": 20*100,
+   "TEN": 10*100,
+   "FIVE": 5*100,
+   "ONE": 1*100,
+   "QUARTER": 0.25*100,
+   "DIME": 0.1*100,
+   "NICKEL": 0.05*100,
+   "PENNY": 0.01*100,
+    
+  };
+
+  let change = cash*100-price*100;
+  let totalCid =0;
+  for(let elem of cid){
+      totalCid+=elem[1]*100;}
+  
+  if(totalCid<change){
+    return {status: "INSUFFICIENT_FUNDS", change: []};
+  } else if(totalCid==change){
+    return {status: "CLOSED", change: cid}
+  } else {
+    let total =[];
+    for(let elem of cid){ elem[1]=elem[1]*100}//just multiply all the nums by 100
+       cid = cid.reverse();
+      // console.log(cid)
+      for(let elem of cid){
+        let money =[elem[0],0]
+        // console.log(money)
+        while(change >= currencyValues[elem[0]] && elem[1]>0){
+          change-= currencyValues[elem[0]];
+          elem[1]-= currencyValues[elem[0]];
+          money[1]+=currencyValues[elem[0]]/100;
+        }
+         if(money[1]>0){
+             total.push(money)
+         }
+      }
+      if(change>0) {return {status: "INSUFFICIENT_FUNDS", change: []};}
+//       console.log({status: "OPEN", change: total})
+      return {status: "OPEN", change: total};
+  }
+  
+}
+
+checkCashRegister(3.26, 100, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]])
