@@ -1,0 +1,19 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+p{ box-sizing: border-box;
+    font-size: 100px;
+    padding: 30px;
+    border-radius: 40px;
+    background-color:rgb(183, 135, 228);
+}
