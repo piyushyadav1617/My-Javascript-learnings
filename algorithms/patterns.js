@@ -84,6 +84,11 @@ function hollowTriangle(rows) {
 }
 
 //diamond
+//    *
+//   ***
+//  *****
+//   ***
+//    * 
 function diamond(rows) {
 
 
